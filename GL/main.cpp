@@ -1101,7 +1101,7 @@ int main()
 	glm::mat4 projection = glm::mat4(1.0f);
 	view = glm::lookAt(glm::vec3(0, 0, 10), glm::vec3(0.0, 0.0, 0.0), glm::vec3(0.0, 1.0, 0.0));
 	projection = glm::perspective(glm::radians(45.0f), 1000.f / 1000, 0.1f, 100.0f);
-
+	 
 	cubeShader.use();
 
 	rotateLoc = glGetUniformLocation(cubeShader.ID, "rotate");
